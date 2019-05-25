@@ -20,6 +20,7 @@ class PhotosTableViewController: UITableViewController {
             self.photos = photos
             self.navigationController?.navigationBar.topItem?.title = "Redentor Games 2018"
             self.tableView.reloadData()
+            self.tableView.tableFooterView = UIView()
         }
         
     }

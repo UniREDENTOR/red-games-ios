@@ -14,4 +14,8 @@ class ApiService {
     static func getPhoto() -> String{
         return "\(server)photos"
     }
+    
+    static func getGames(id: Int)->String {
+        return "\(server)days/\(id)"
+    }
 }

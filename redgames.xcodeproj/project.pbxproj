@@ -18,6 +18,10 @@
 		5C203C0E22997571004139DD /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C203C0D22997571004139DD /* ApiService.swift */; };
 		5C203C102299782E004139DD /* RequestRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C203C0F2299782E004139DD /* RequestRest.swift */; };
 		5C203C1322998477004139DD /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C203C1222998477004139DD /* ColorUtils.swift */; };
+		5C203C1722999DED004139DD /* GameInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C203C1622999DED004139DD /* GameInformationViewController.swift */; };
+		5C203C192299AA82004139DD /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C203C182299AA82004139DD /* Game.swift */; };
+		5C203C1B2299ADF0004139DD /* GameDaysTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C203C1A2299ADF0004139DD /* GameDaysTableViewController.swift */; };
+		5C203C1D2299AE23004139DD /* GameTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C203C1C2299AE23004139DD /* GameTableViewController.swift */; };
 		F4AEFF096E4126BAF6842340 /* Pods_redgames.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04544C1D3E6FB9C8889E95E9 /* Pods_redgames.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +40,10 @@
 		5C203C0D22997571004139DD /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		5C203C0F2299782E004139DD /* RequestRest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestRest.swift; sourceTree = "<group>"; };
 		5C203C1222998477004139DD /* ColorUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtils.swift; sourceTree = "<group>"; };
+		5C203C1622999DED004139DD /* GameInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInformationViewController.swift; sourceTree = "<group>"; };
+		5C203C182299AA82004139DD /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		5C203C1A2299ADF0004139DD /* GameDaysTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDaysTableViewController.swift; sourceTree = "<group>"; };
+		5C203C1C2299AE23004139DD /* GameTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewController.swift; sourceTree = "<group>"; };
 		5F0331213AFD93680BE2116D /* Pods-redgames.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-redgames.release.xcconfig"; path = "Pods/Target Support Files/Pods-redgames/Pods-redgames.release.xcconfig"; sourceTree = "<group>"; };
 		A65DF50E96A8791FB2FCCE81 /* Pods-redgames.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-redgames.debug.xcconfig"; path = "Pods/Target Support Files/Pods-redgames/Pods-redgames.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +108,9 @@
 			isa = PBXGroup;
 			children = (
 				5C203C0522996EC5004139DD /* PhotosTableViewController.swift */,
+				5C203C1622999DED004139DD /* GameInformationViewController.swift */,
+				5C203C1A2299ADF0004139DD /* GameDaysTableViewController.swift */,
+				5C203C1C2299AE23004139DD /* GameTableViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -108,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				5C203C0722996ED6004139DD /* Photo.swift */,
+				5C203C182299AA82004139DD /* Game.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -247,6 +259,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-redgames/Pods-redgames-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
@@ -255,6 +268,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -273,10 +287,14 @@
 				5C203C102299782E004139DD /* RequestRest.swift in Sources */,
 				5C203C0B22996F48004139DD /* PhotoTableViewCell.swift in Sources */,
 				5C203C0822996ED6004139DD /* Photo.swift in Sources */,
+				5C203C1722999DED004139DD /* GameInformationViewController.swift in Sources */,
 				5C203C1322998477004139DD /* ColorUtils.swift in Sources */,
+				5C203C192299AA82004139DD /* Game.swift in Sources */,
 				5C203C0E22997571004139DD /* ApiService.swift in Sources */,
 				5C203BF022996362004139DD /* redgames.xcdatamodeld in Sources */,
 				5C203BE822996362004139DD /* AppDelegate.swift in Sources */,
+				5C203C1D2299AE23004139DD /* GameTableViewController.swift in Sources */,
+				5C203C1B2299ADF0004139DD /* GameDaysTableViewController.swift in Sources */,
 				5C203C0622996EC5004139DD /* PhotosTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

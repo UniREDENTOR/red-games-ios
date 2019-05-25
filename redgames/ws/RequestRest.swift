@@ -31,4 +31,22 @@ class RequestRest{
             
         }
     }
+    
+    static func getGames(id: Int, complete: @escaping ([Game]) -> Void ){
+        Alamofire.request(ApiService.getGames(id: id)).responseJSON(){ response in
+            var games = [Game]()
+            
+            switch(response.result){
+                
+            case .success(let data):
+                
+                for gameJson in JSON(data).array! {
+                    games.append(Game(json: gameJson))
+                }
+                complete(games)
+            case .failure(_):
+                complete(games)
+            }
+        }
+    }
 }

@@ -20,6 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window!.tintColor = ColorUtils.accent()
         UINavigationBar.appearance().isTranslucent = false
         UINavigationBar.appearance().tintColor = UIColor.white
+        UINavigationBar.appearance()x.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+
         UIApplication.shared.statusBarStyle = UIStatusBarStyle.default
         
 

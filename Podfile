@@ -11,5 +11,6 @@ target 'redgames' do
   pod 'SwiftyJSON', '~> 4.0'
   pod 'Nuke'
   pod 'Alamofire'
+  pod 'Eureka'
 
 end

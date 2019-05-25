@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F11EF5505E52014A53B4982BE7B76A9A"
+               BlueprintIdentifier = "BE97A7044BD60C936650451CE9C8DF80"
                BuildableName = "Pods_redgames.framework"
                BlueprintName = "Pods-redgames"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F11EF5505E52014A53B4982BE7B76A9A"
+            BlueprintIdentifier = "BE97A7044BD60C936650451CE9C8DF80"
             BuildableName = "Pods_redgames.framework"
             BlueprintName = "Pods-redgames"
             ReferencedContainer = "container:Pods.xcodeproj">
