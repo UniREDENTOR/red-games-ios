@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		5C203BE822996362004139DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C203BE722996362004139DD /* AppDelegate.swift */; };
-		5C203BEA22996362004139DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C203BE922996362004139DD /* ViewController.swift */; };
 		5C203BED22996362004139DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C203BEB22996362004139DD /* Main.storyboard */; };
 		5C203BF022996362004139DD /* redgames.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C203BEE22996362004139DD /* redgames.xcdatamodeld */; };
 		5C203BF222996363004139DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C203BF122996363004139DD /* Assets.xcassets */; };
 		5C203BF522996363004139DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C203BF322996363004139DD /* LaunchScreen.storyboard */; };
+		F4AEFF096E4126BAF6842340 /* Pods_redgames.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04544C1D3E6FB9C8889E95E9 /* Pods_redgames.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04544C1D3E6FB9C8889E95E9 /* Pods_redgames.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_redgames.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C203BE422996362004139DD /* redgames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = redgames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C203BE722996362004139DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5C203BE922996362004139DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5C203BEC22996362004139DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C203BEF22996362004139DD /* redgames.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = redgames.xcdatamodel; sourceTree = "<group>"; };
 		5C203BF122996363004139DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C203BF422996363004139DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C203BF622996363004139DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F0331213AFD93680BE2116D /* Pods-redgames.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-redgames.release.xcconfig"; path = "Pods/Target Support Files/Pods-redgames/Pods-redgames.release.xcconfig"; sourceTree = "<group>"; };
+		A65DF50E96A8791FB2FCCE81 /* Pods-redgames.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-redgames.debug.xcconfig"; path = "Pods/Target Support Files/Pods-redgames/Pods-redgames.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4AEFF096E4126BAF6842340 /* Pods_redgames.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D4774E05962A97CF24378CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04544C1D3E6FB9C8889E95E9 /* Pods_redgames.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5C203BDB22996362004139DD = {
 			isa = PBXGroup;
 			children = (
 				5C203BE622996362004139DD /* redgames */,
 				5C203BE522996362004139DD /* Products */,
+				E062421E0DB7A1F76A174A0E /* Pods */,
+				0D4774E05962A97CF24378CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,7 +70,6 @@
 			isa = PBXGroup;
 			children = (
 				5C203BE722996362004139DD /* AppDelegate.swift */,
-				5C203BE922996362004139DD /* ViewController.swift */,
 				5C203BEB22996362004139DD /* Main.storyboard */,
 				5C203BF122996363004139DD /* Assets.xcassets */,
 				5C203BF322996363004139DD /* LaunchScreen.storyboard */,
@@ -67,6 +79,15 @@
 			path = redgames;
 			sourceTree = "<group>";
 		};
+		E062421E0DB7A1F76A174A0E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A65DF50E96A8791FB2FCCE81 /* Pods-redgames.debug.xcconfig */,
+				5F0331213AFD93680BE2116D /* Pods-redgames.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C203BF922996363004139DD /* Build configuration list for PBXNativeTarget "redgames" */;
 			buildPhases = (
+				143C37A9E6D2FA9E3A7FBD1D /* [CP] Check Pods Manifest.lock */,
 				5C203BE022996362004139DD /* Sources */,
 				5C203BE122996362004139DD /* Frameworks */,
 				5C203BE222996362004139DD /* Resources */,
+				3C12387B8B6409F5CAD91A7C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,13 +156,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		143C37A9E6D2FA9E3A7FBD1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-redgames-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C12387B8B6409F5CAD91A7C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-redgames/Pods-redgames-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-redgames/Pods-redgames-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5C203BE022996362004139DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5C203BF022996362004139DD /* redgames.xcdatamodeld in Sources */,
-				5C203BEA22996362004139DD /* ViewController.swift in Sources */,
 				5C203BE822996362004139DD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +355,7 @@
 		};
 		5C203BFA22996363004139DD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A65DF50E96A8791FB2FCCE81 /* Pods-redgames.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +374,7 @@
 		};
 		5C203BFB22996363004139DD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F0331213AFD93680BE2116D /* Pods-redgames.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
