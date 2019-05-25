@@ -15,6 +15,14 @@ class ApiService {
         return "\(server)photos"
     }
     
+    static func getTeams() -> String{
+        return "\(server)teams"
+    }
+    
+    static func getRanking() -> String{
+        return "\(server)ranking"
+    }
+    
     static func getGames(id: Int)->String {
         return "\(server)days/\(id)"
     }

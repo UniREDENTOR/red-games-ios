@@ -12,6 +12,26 @@ import SwiftyJSON
 
 class RequestRest{
     
+    static func getRanking(complete: @escaping ([Ranking]) -> Void) {
+        Alamofire.request(ApiService.getRanking()).responseJSON(){response in
+            var ranking = [Ranking]()
+            switch(response.result){
+                
+            case .success(let data):
+                
+                for rankingJson in JSON(data).array! {
+                    ranking.append(Ranking(json: rankingJson))
+                }
+                complete(ranking)
+                
+            case .failure(_):
+                complete(ranking)
+                
+            }
+            
+        }
+    }
+    
     static func getPhotos(complete: @escaping ([Photo]) -> Void) {
         Alamofire.request(ApiService.getPhoto()).responseJSON(){response in
             var photos = [Photo]()
@@ -29,6 +49,24 @@ class RequestRest{
                 
             }
             
+        }
+    }
+    
+    static func getTeams(complete: @escaping ([Team]) -> Void ){
+        Alamofire.request(ApiService.getTeams()).responseJSON { response in
+            
+            var teams = [Team]()
+            switch(response.result){
+                
+            case .success(let data):
+                
+                for teamJson in JSON(data).array! {
+                    teams.append(Team(json: teamJson))
+                }
+                complete(teams)
+            case .failure(_):
+                complete(teams)
+            }
         }
     }
     

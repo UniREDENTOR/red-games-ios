@@ -22,6 +22,12 @@
 		5C203C192299AA82004139DD /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C203C182299AA82004139DD /* Game.swift */; };
 		5C203C1B2299ADF0004139DD /* GameDaysTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C203C1A2299ADF0004139DD /* GameDaysTableViewController.swift */; };
 		5C203C1D2299AE23004139DD /* GameTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C203C1C2299AE23004139DD /* GameTableViewController.swift */; };
+		5C203C1F2299C4B9004139DD /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C203C1E2299C4B9004139DD /* TeamTableViewCell.swift */; };
+		5C203C212299C4D5004139DD /* TeamTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C203C202299C4D5004139DD /* TeamTableViewController.swift */; };
+		5C203C232299C529004139DD /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C203C222299C529004139DD /* Team.swift */; };
+		5C203C252299CBCB004139DD /* RankingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C203C242299CBCB004139DD /* RankingTableViewController.swift */; };
+		5C203C272299CBDE004139DD /* RankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C203C262299CBDE004139DD /* RankingTableViewCell.swift */; };
+		5C203C292299CBF7004139DD /* Ranking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C203C282299CBF7004139DD /* Ranking.swift */; };
 		F4AEFF096E4126BAF6842340 /* Pods_redgames.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04544C1D3E6FB9C8889E95E9 /* Pods_redgames.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +50,12 @@
 		5C203C182299AA82004139DD /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		5C203C1A2299ADF0004139DD /* GameDaysTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDaysTableViewController.swift; sourceTree = "<group>"; };
 		5C203C1C2299AE23004139DD /* GameTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewController.swift; sourceTree = "<group>"; };
+		5C203C1E2299C4B9004139DD /* TeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
+		5C203C202299C4D5004139DD /* TeamTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewController.swift; sourceTree = "<group>"; };
+		5C203C222299C529004139DD /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		5C203C242299CBCB004139DD /* RankingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingTableViewController.swift; sourceTree = "<group>"; };
+		5C203C262299CBDE004139DD /* RankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingTableViewCell.swift; sourceTree = "<group>"; };
+		5C203C282299CBF7004139DD /* Ranking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ranking.swift; sourceTree = "<group>"; };
 		5F0331213AFD93680BE2116D /* Pods-redgames.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-redgames.release.xcconfig"; path = "Pods/Target Support Files/Pods-redgames/Pods-redgames.release.xcconfig"; sourceTree = "<group>"; };
 		A65DF50E96A8791FB2FCCE81 /* Pods-redgames.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-redgames.debug.xcconfig"; path = "Pods/Target Support Files/Pods-redgames/Pods-redgames.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +123,8 @@
 				5C203C1622999DED004139DD /* GameInformationViewController.swift */,
 				5C203C1A2299ADF0004139DD /* GameDaysTableViewController.swift */,
 				5C203C1C2299AE23004139DD /* GameTableViewController.swift */,
+				5C203C202299C4D5004139DD /* TeamTableViewController.swift */,
+				5C203C242299CBCB004139DD /* RankingTableViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -120,6 +134,8 @@
 			children = (
 				5C203C0722996ED6004139DD /* Photo.swift */,
 				5C203C182299AA82004139DD /* Game.swift */,
+				5C203C222299C529004139DD /* Team.swift */,
+				5C203C282299CBF7004139DD /* Ranking.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -128,6 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				5C203C0A22996F48004139DD /* PhotoTableViewCell.swift */,
+				5C203C1E2299C4B9004139DD /* TeamTableViewCell.swift */,
+				5C203C262299CBDE004139DD /* RankingTableViewCell.swift */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -287,14 +305,20 @@
 				5C203C102299782E004139DD /* RequestRest.swift in Sources */,
 				5C203C0B22996F48004139DD /* PhotoTableViewCell.swift in Sources */,
 				5C203C0822996ED6004139DD /* Photo.swift in Sources */,
+				5C203C272299CBDE004139DD /* RankingTableViewCell.swift in Sources */,
+				5C203C232299C529004139DD /* Team.swift in Sources */,
 				5C203C1722999DED004139DD /* GameInformationViewController.swift in Sources */,
+				5C203C212299C4D5004139DD /* TeamTableViewController.swift in Sources */,
 				5C203C1322998477004139DD /* ColorUtils.swift in Sources */,
 				5C203C192299AA82004139DD /* Game.swift in Sources */,
+				5C203C252299CBCB004139DD /* RankingTableViewController.swift in Sources */,
 				5C203C0E22997571004139DD /* ApiService.swift in Sources */,
 				5C203BF022996362004139DD /* redgames.xcdatamodeld in Sources */,
+				5C203C1F2299C4B9004139DD /* TeamTableViewCell.swift in Sources */,
 				5C203BE822996362004139DD /* AppDelegate.swift in Sources */,
 				5C203C1D2299AE23004139DD /* GameTableViewController.swift in Sources */,
 				5C203C1B2299ADF0004139DD /* GameDaysTableViewController.swift in Sources */,
+				5C203C292299CBF7004139DD /* Ranking.swift in Sources */,
 				5C203C0622996EC5004139DD /* PhotosTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
