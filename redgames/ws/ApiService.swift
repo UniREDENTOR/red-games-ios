@@ -19,6 +19,14 @@ class ApiService {
         return "\(server)teams"
     }
     
+    static func postEvent(eventId: Int, teamId: Int) -> String{
+        return "\(server)events/\(eventId)/\(teamId)"
+    }
+    
+    static func getEvents() -> String{
+        return "\(server)events"
+    }
+    
     static func getRanking() -> String{
         return "\(server)ranking"
     }

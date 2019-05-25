@@ -11,12 +11,15 @@ import UIKit
 class TeamTableViewController: UITableViewController {
 
     var teams = [Team]()
+    var eventId = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         RequestRest.getTeams(){ response in
             self.teams = response
+            self.navigationController?.navigationBar.topItem?.title = "Times"
+
             self.tableView.reloadData()
             self.tableView.tableFooterView = UIView()
         }
@@ -35,6 +38,12 @@ class TeamTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "teamCell", for: indexPath) as! TeamTableViewCell
         cell.set(team: teams[indexPath.row])
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if eventId > 0 {
+            
+        }
     }
     
 

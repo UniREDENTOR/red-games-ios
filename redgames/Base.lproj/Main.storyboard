@@ -88,15 +88,61 @@
                         <segue destination="alu-aX-JTB" kind="relationship" relationship="viewControllers" id="3bU-Wh-EWb"/>
                         <segue destination="Ef9-Kq-HTA" kind="relationship" relationship="viewControllers" id="SNb-Nc-KxT"/>
                         <segue destination="LEj-hu-Kpk" kind="relationship" relationship="viewControllers" id="ydj-BL-iAJ"/>
+                        <segue destination="IYS-dm-JNk" kind="relationship" relationship="viewControllers" id="wcw-JZ-jpA"/>
                     </connections>
                 </tabBarController>
             </objects>
             <point key="canvasLocation" x="-466" y="-4"/>
         </scene>
+        <!--Vote-->
+        <scene sceneID="sr7-rz-AWf">
+            <objects>
+                <tableViewController id="IYS-dm-JNk" customClass="EventsTableViewController" customModule="redgames" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="JvG-AX-rgB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="eventCell" textLabel="YoC-Ns-9yq" detailTextLabel="QWO-Sh-7R2" style="IBUITableViewCellStyleSubtitle" id="jwT-jw-x8R" customClass="EventTableViewCell" customModule="redgames" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jwT-jw-x8R" id="Wwl-lE-Gfo">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YoC-Ns-9yq">
+                                            <rect key="frame" x="20" y="5" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QWO-Sh-7R2">
+                                            <rect key="frame" x="20" y="25.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="IYS-dm-JNk" id="dhb-pj-xbk"/>
+                            <outlet property="delegate" destination="IYS-dm-JNk" id="a8f-26-YVB"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Vote" image="vote" id="Jbv-rM-9fM"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ee0-6g-1WY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-489" y="673"/>
+        </scene>
         <!--Times-->
         <scene sceneID="y1a-sD-YlF">
             <objects>
-                <tableViewController id="Ef9-Kq-HTA" customClass="TeamTableViewController" customModule="redgames" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="TeamStory" id="Ef9-Kq-HTA" customClass="TeamTableViewController" customModule="redgames" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="WTZ-OI-ZXb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -117,7 +163,7 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4y-kH-G52">
-                                            <rect key="frame" x="121" y="11" width="273" height="46"/>
+                                            <rect key="frame" x="121" y="11" width="273" height="44"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -137,7 +183,7 @@
                                         <constraint firstItem="T4y-kH-G52" firstAttribute="trailing" secondItem="Nu0-kP-oLo" secondAttribute="trailing" id="Dty-yv-AUp"/>
                                         <constraint firstItem="T4y-kH-G52" firstAttribute="top" secondItem="6cu-T3-BYp" secondAttribute="topMargin" id="H9z-Cu-APg"/>
                                         <constraint firstItem="Nu0-kP-oLo" firstAttribute="trailing" secondItem="6cu-T3-BYp" secondAttribute="trailingMargin" id="Ise-77-Zp5"/>
-                                        <constraint firstItem="Nu0-kP-oLo" firstAttribute="top" secondItem="T4y-kH-G52" secondAttribute="bottom" constant="8" id="Rfn-Um-X7l"/>
+                                        <constraint firstItem="Nu0-kP-oLo" firstAttribute="top" secondItem="T4y-kH-G52" secondAttribute="bottom" constant="10" id="Rfn-Um-X7l"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="Nu0-kP-oLo" secondAttribute="bottom" constant="9" id="e8f-IV-D92"/>
                                         <constraint firstItem="kF7-na-wqR" firstAttribute="centerY" secondItem="6cu-T3-BYp" secondAttribute="centerY" id="ncc-ck-byN"/>
                                         <constraint firstItem="T4y-kH-G52" firstAttribute="leading" secondItem="kF7-na-wqR" secondAttribute="trailing" constant="11" id="rKv-jS-7Ma"/>
@@ -401,5 +447,6 @@
         <image name="photos" width="32" height="32"/>
         <image name="ranking" width="32" height="32"/>
         <image name="teams" width="32" height="32"/>
+        <image name="vote" width="32" height="32"/>
     </resources>
 </document>

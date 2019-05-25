@@ -17,6 +17,7 @@ class RankingTableViewController: UITableViewController {
         
         RequestRest.getRanking(){ response in
             self.rankings = response
+            self.navigationController?.navigationBar.topItem?.title = "Ranking"
             self.tableView.reloadData()
             self.tableView.tableFooterView = UIView()
             

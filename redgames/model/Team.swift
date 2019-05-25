@@ -11,6 +11,7 @@ import SwiftyJSON
 
 class Team {
     
+    var id = 0
     var logo = ""
     var description = ""
     var leader = ""
@@ -44,6 +45,10 @@ class Team {
             for member in members {
                 self.members.append(member.string!)
             }
+        }
+        
+        if let id = json["id"].int {
+            self.id = id 
         }
     }
     
