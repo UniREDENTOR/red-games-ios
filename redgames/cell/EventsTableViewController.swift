@@ -12,20 +12,14 @@ class EventsTableViewController: UITableViewController {
 
     var events = [Event]()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    override func viewDidAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.topItem?.title = "Provas"
         RequestRest.getEvents(){
-             response in
+            response in
             self.events = response
             self.tableView.reloadData()
             self.tableView.tableFooterView = UIView()
         }
-        
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        self.navigationController?.navigationBar.topItem?.title = "Provas"
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -48,9 +42,9 @@ class EventsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let vc = storyboard?.instantiateViewController(withIdentifier: "TeamStory") as! TeamTableViewController
+        let vc = storyboard?.instantiateViewController(withIdentifier: "TeamVotationStory") as! TeamVotationTableViewController
         let event = events[indexPath.row]
-        vc.eventId = event.id
+        vc.id = event.id
         show(vc, sender: nil)
     }
 

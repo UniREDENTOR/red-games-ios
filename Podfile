@@ -12,5 +12,7 @@ target 'redgames' do
   pod 'Nuke'
   pod 'Alamofire'
   pod 'Eureka'
+  pod 'PopupDialog'
+
 
 end

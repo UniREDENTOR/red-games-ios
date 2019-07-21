@@ -14,6 +14,7 @@ class Ranking {
     var logo = ""
     var name = ""
     var score = 0.0
+    var position = 1
     
     init(json: JSON){
         
@@ -27,6 +28,10 @@ class Ranking {
         
         if let score = json["score"].double {
             self.score = score
+        }
+        
+        if let position = json["position"].int {
+            self.position = position
         }
     }
     

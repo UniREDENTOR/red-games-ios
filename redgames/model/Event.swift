@@ -16,6 +16,8 @@ class Event {
     var description = ""
     var id = 1
     
+    init(){}
+    
     init(json : JSON){
         
         if let name = json["name"].string {

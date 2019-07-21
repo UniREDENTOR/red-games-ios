@@ -10,7 +10,7 @@ import Foundation
 
 class ApiService {
     
-    static let server = "http://henriquetatagiba.localhost.run/api/"
+    static let server = "https://red-games-api.herokuapp.com/api/"
     static func getPhoto() -> String{
         return "\(server)photos"
     }
@@ -21,6 +21,10 @@ class ApiService {
     
     static func postEvent(eventId: Int, teamId: Int) -> String{
         return "\(server)events/\(eventId)/\(teamId)"
+    }
+    
+    static func getEventTeams(eventId: Int) -> String{
+        return "\(server)events/\(eventId)"
     }
     
     static func getEvents() -> String{

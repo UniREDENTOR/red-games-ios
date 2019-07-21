@@ -12,9 +12,11 @@ class GameDaysTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.navigationController?.navigationBar.topItem?.title = "Programação"
         self.tableView.tableFooterView = UIView()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.topItem?.title = "Programação"
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {

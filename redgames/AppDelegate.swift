@@ -17,11 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         UINavigationBar.appearance().barTintColor = ColorUtils.primary()
-        self.window!.tintColor = ColorUtils.accent()
+        self.window!.tintColor = ColorUtils.primary()
         UINavigationBar.appearance().isTranslucent = false
         UINavigationBar.appearance().tintColor = UIColor.white
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-
+       // UITabBar.appearance().barTintColor = ColorUtils.primary()
         UIApplication.shared.statusBarStyle = UIStatusBarStyle.default
         
 

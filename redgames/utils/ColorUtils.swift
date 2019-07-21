@@ -12,11 +12,23 @@ import UIKit
 class ColorUtils {
     
     static func primary() -> UIColor {
+        return green()
+    }
+    
+    static func red() -> UIColor {
+        return hexStringToUIColor(hex: "#e35418")
+    }
+    
+    static func blue() -> UIColor {
         return hexStringToUIColor(hex: "#0058a0")
     }
     
     static func accent() -> UIColor {
-        return hexStringToUIColor(hex: "#e35418")
+        return blue()
+    }
+    
+    static func green() -> UIColor {
+        return hexStringToUIColor(hex: "#008636")
     }
     
     static func hexStringToUIColor (hex:String) -> UIColor {

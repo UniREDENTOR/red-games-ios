@@ -12,9 +12,31 @@ import SwiftyJSON
 
 class RequestRest{
     
-    static func postEvents(eventId: Int, teamId: Int) -> Void {
-        Alamofire.request(ApiService.postEvent(eventId: eventId, teamId: teamId)).responseJSON(){response in
-          
+    static func postEvents(eventId: Int, teamId: Int, uuid: String, amount: Int, complete: @escaping (Event) -> Void) {
+        Alamofire.request(ApiService.postEvent(eventId: eventId, teamId: teamId),
+                          method: .post, parameters: ["uuid" : uuid,   "amount" : amount]).responseJSON(){response in
+            complete(Event())
+        }
+    }
+    
+    static func getEventsTeams(eventId: Int, complete: @escaping ([Team]) -> Void) {
+        Alamofire.request(ApiService.getEventTeams(eventId: eventId)).responseJSON(){response in
+            
+            
+            var teams = [Team]()
+            switch(response.result){
+                
+            case .success(let data):
+                print("Data \(data)")
+                for teamJson in JSON(data).array! {
+                    teams.append(Team(json: teamJson))
+                }
+                complete(teams)
+                
+            case .failure(let msg):
+                complete(teams)
+                
+            }
         }
     }
     
@@ -43,7 +65,6 @@ class RequestRest{
             switch(response.result){
                 
             case .success(let data):
-                
                 for rankingJson in JSON(data).array! {
                     ranking.append(Ranking(json: rankingJson))
                 }

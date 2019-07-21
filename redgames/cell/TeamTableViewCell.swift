@@ -17,9 +17,12 @@ class TeamTableViewCell: UITableViewCell {
     @IBOutlet weak var labelDescription: UILabel!
     
     func set(team: Team){
-        Nuke.loadImage(with: URL(string: team.logo)!, into: imageLogo)
+        
         labelName.text = team.name
         labelDescription.text = team.description
+        imageLogo.layer.cornerRadius = imageLogo.frame.size.width / 2
+        imageLogo.clipsToBounds = true
+        Nuke.loadImage(with: URL(string: team.logo)!, into: imageLogo)
     }
     
 
